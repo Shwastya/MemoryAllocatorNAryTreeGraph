@@ -103,7 +103,7 @@ public:
 		std::stack<NodeVisit> s{};
 
 		s.push({ this, true });
-
+		 
 		while (!s.empty())
 		{
 			Node* currentNode { s.top().node };

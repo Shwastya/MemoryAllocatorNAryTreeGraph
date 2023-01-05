@@ -4,11 +4,20 @@
 
 Node::Node()
 {
+	
 }
 
 Node::~Node()
 {
-	
+	//delete m_parent;
+
+	//std::cout << m_children.size() << "\n";
+
+	for (auto& child : m_children)
+	{
+		// std::cout << "delete " << m_children[i]->getTag() << "\n";
+		delete child;
+	}
 }
 
 void Node::enable() {

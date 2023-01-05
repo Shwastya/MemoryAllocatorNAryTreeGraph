@@ -10,7 +10,7 @@ SceneGraph::SceneGraph()
 
 SceneGraph::~SceneGraph()
 {
-	// delete root
+	delete m_root;
 }
 
 Node* SceneGraph::getRoot()

@@ -275,7 +275,7 @@ template<size_t id>
 
 // la siguiente funcion permite escoger entre las dos estrategias
 // con un parametro de tipo bool
-
+#if 0
 struct info
 {
 	size_t index{ 0 };		 // que bucket?
@@ -375,7 +375,7 @@ bool initialize() noexcept
 	(void)get_instance<id>();
 	return is_defined<id>();
 }
-
+#endif
 
 
 
